@@ -1,0 +1,24 @@
+# 機密情報（絶対にコミットしないこと）
+.env
+accounts.yaml
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# ログ
+*.log

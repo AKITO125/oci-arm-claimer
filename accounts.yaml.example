@@ -1,0 +1,24 @@
+accounts:
+  # ── アカウント1（自分） ────────────────────────────────────────────────────────
+  - profile: DEFAULT          # ~/.oci/config のプロファイル名
+    name: "自分のアカウント（東京）"
+    compartment_id: ""        # 省略時: テナントルートを使用
+    subnet_id: ""             # 省略時: 自動検索
+    image_id: ""              # 省略時: 最新 Ubuntu ARM を自動選択
+    instance_name: "arm-free-instance"
+
+  # ── アカウント2（家族1） ──────────────────────────────────────────────────────
+  - profile: FAMILY1          # ~/.oci/config の別プロファイル
+    name: "家族アカウント1（大阪）"
+    compartment_id: ""
+    subnet_id: ""
+    image_id: ""
+    instance_name: "arm-free-instance"
+
+  # ── アカウント3（家族2） ──────────────────────────────────────────────────────
+  # - profile: FAMILY2
+  #   name: "家族アカウント2（米国）"
+  #   compartment_id: ""
+  #   subnet_id: ""
+  #   image_id: ""
+  #   instance_name: "arm-free-instance"
