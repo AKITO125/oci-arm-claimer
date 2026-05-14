@@ -6,6 +6,18 @@ OCI（Oracle Cloud Infrastructure）の Always Free ARM インスタンス（`VM
 
 ---
 
+## 取得を早めるコツ：Pay As You Go へのアップグレード
+
+OCI の無料トライアルアカウント（Free Tier）のままでは ARM インスタンスの空きが出ても取得できないことがあります。**Pay As You Go（従量課金）にアップグレードすると、優先的に割り当てられるため即座に取得できるケースがあります。**
+
+- Always Free の範囲内で使う限り**料金は発生しません**（4 OCPU / 24 GB RAM まで無料）
+- クレジットカードの登録は必要ですが、無料枠を超えない使い方であれば課金されません
+- アップグレードは OCI コンソール → 「アップグレードして制限を解除」から行えます
+
+> 課金が心配な方は、下記の **[OCI クレジット監視ツール](https://github.com/AKITO125/oci-credit-monitor)** と組み合わせて使うことを推奨します。コスト上限を超えたらインスタンスを自動停止する機能があります。
+
+---
+
 ## 機能
 
 - 全可用性ドメイン（AD）を順番に試行
@@ -332,6 +344,10 @@ Start-Process python -ArgumentList "main.py" -WindowStyle Hidden -RedirectStanda
 ```
 
 ---
+
+## 関連ツール
+
+- **[oci-credit-monitor](https://github.com/AKITO125/oci-credit-monitor)** — OCI クレジット使用状況の確認・予算アラート登録・コスト超過時のインスタンス自動停止ツール
 
 ## ライセンス
 
